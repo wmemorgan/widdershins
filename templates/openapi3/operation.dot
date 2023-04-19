@@ -23,7 +23,7 @@
 
 `{{= data.methodUpper}} {{=data.method.path}}`
 
-{{? data.operation.summary && !data.options.tocSummary}}*{{= data.operation.summary }}*{{?}}
+## <h2 id="{{=data.operation.operationId+'-'+data.operation.summary}}">{{? data.operation.summary}}{{= data.operation.summary }}{{?}}</h2>
 
 {{? data.operation.description}}{{= data.operation.description }}{{?}}
 
