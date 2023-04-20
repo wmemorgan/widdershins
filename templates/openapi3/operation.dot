@@ -1,6 +1,6 @@
 {{= data.tags.section }}
 
-## {{= data.operationUniqueName}}
+## <h2 id="{{=data.operation.operationId+'-'+data.operation.summary}}">{{? data.operation.summary}}{{= data.operation.summary }}{{?}}</h2>
 
 {{? data.operation.operationId}}
 <a id="opId{{=data.operation.operationId}}"></a>
@@ -22,8 +22,6 @@
 {{?}}
 
 `{{= data.methodUpper}} {{=data.method.path}}`
-
-## <h2 id="{{=data.operation.operationId+'-'+data.operation.summary}}">{{? data.operation.summary}}{{= data.operation.summary }}{{?}}</h2>
 
 {{? data.operation.description}}{{= data.operation.description }}{{?}}
 
