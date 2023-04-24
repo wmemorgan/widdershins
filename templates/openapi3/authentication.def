@@ -1,5 +1,4 @@
-<aside class="warning">
-To perform this operation, you must be authenticated by means of one of the following methods:
-{{= data.utils.getAuthenticationStr(data) }}
-</aside>
+
+> ![warning.png](/.attachments/warning-fdc847f5-8132-44d7-9580-0af18ba7deac.png) To perform this operation, you must be authenticated by means of one of the following methods: {{= data.utils.getAuthenticationStr(data) }}
+
 
